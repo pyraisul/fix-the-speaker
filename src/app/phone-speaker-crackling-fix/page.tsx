@@ -1,5 +1,6 @@
 import SEOPage from "@/components/SEOPage";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Phone Speaker Crackling? How to Clean & Fix | SpeakerFix Pro",
@@ -31,7 +32,7 @@ export default function CracklingFix() {
 
                     <h2>Fixing Crackling Sound with &apos;Pulse Mode&apos;</h2>
                     <p>
-                        The &apos;Pulse Mode&apos; on <a href="/">SpeakerFix Pro</a> is specifically designed for crackling.
+                        The &apos;Pulse Mode&apos; on <Link href="/">SpeakerFix Pro</Link> is specifically designed for crackling.
                         By sending rapid bursts of square-wave energy, it can often &apos;loosen&apos; any sticky residue or
                         dislodge magnetic particles that have settled on the speaker&apos;s active surface.
                     </p>

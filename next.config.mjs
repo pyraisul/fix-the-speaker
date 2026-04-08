@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
+const raw = (process.env.NEXT_PUBLIC_BASE_PATH || "").trim();
+const basePath =
+  raw === "" ? undefined : raw.startsWith("/") ? raw : `/${raw}`;
+
 const nextConfig = {
-  output: 'export', // For static deployment as requested
+  output: "export",
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
+  ...(basePath ? { basePath, assetPrefix: basePath } : {}),
 };
 
 export default nextConfig;

@@ -1,5 +1,6 @@
 import SEOPage from "@/components/SEOPage";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Android Speaker Not Working? Troubleshooting Guide | SpeakerFix Pro",
@@ -35,7 +36,7 @@ export default function AndroidFix() {
 
                     <h2>Step 3: Clear Muffled Sound with Vibrations</h2>
                     <p>
-                        Android phones are particularly susceptible to dust. Our <a href="/">SpeakerFix Pro tool</a> is highly effective
+                        Android phones are particularly susceptible to dust. Our <Link href="/">SpeakerFix Pro tool</Link> is highly effective
                         on Android devices. The &apos;Deep Clean&apos; sweep mode is designed to vibrate through the different grill sizes
                         found on various Android models.
                     </p>

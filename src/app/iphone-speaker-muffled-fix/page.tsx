@@ -1,5 +1,6 @@
 import SEOPage from "@/components/SEOPage";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "iPhone Speaker Muffled? How to Fix it Fast | SpeakerFix Pro",
@@ -34,7 +35,7 @@ export default function IPhoneFix() {
                     <h3>1. Use the 'Water Eject' Sound Frequency</h3>
                     <p>
                         Apple actually includes a 'Water Lock' feature on Apple Watches that uses a specific tone to eject water.
-                        While the iPhone doesn&apos;t have this built-in, you can use our <a href="/">SpeakerFix Pro tool</a> to achieve the same result.
+                        While the iPhone doesn&apos;t have this built-in, you can use our <Link href="/">SpeakerFix Pro tool</Link> to achieve the same result.
                         Select the 'Water Mode' and let the vibrations do the work.
                     </p>
 

@@ -5,7 +5,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -28,22 +28,19 @@ jobs:
           node-version: "20"
           cache: npm
 
-      - name: Base path for project pages
-        id: base
+      # Set base path in the same shell as `next build` so Next always sees it
+      # (project sites live at github.io/<repo>/ — assets must be /repo/_next/...)
+      - name: Install and build
         shell: bash
         run: |
           REPO="${{ github.event.repository.name }}"
           OWNER="${{ github.repository_owner }}"
           if [ "$REPO" = "${OWNER}.github.io" ]; then
-            echo "path=" >> "$GITHUB_OUTPUT"
+            export NEXT_PUBLIC_BASE_PATH=""
           else
-            echo "path=/$REPO" >> "$GITHUB_OUTPUT"
+            export NEXT_PUBLIC_BASE_PATH="/$REPO"
           fi
-
-      - name: Install and build
-        env:
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.base.outputs.path }}
-        run: |
+          echo "NEXT_PUBLIC_BASE_PATH=$NEXT_PUBLIC_BASE_PATH"
           npm ci
           npm run build
 

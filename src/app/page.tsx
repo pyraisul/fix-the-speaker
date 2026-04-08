@@ -1,4 +1,5 @@
 import SpeakerCleaner from "@/components/SpeakerCleaner";
+import Link from "next/link";
 import { CheckCircle, ShieldCheck, Star } from "lucide-react";
 
 export default function Home() {
@@ -88,9 +89,9 @@ export default function Home() {
             <section className="content-section">
                 <h2 style={{ fontSize: '1.5rem' }}>Related Guides</h2>
                 <ul style={{ listStyle: 'none', padding: 0 }}>
-                    <li style={{ marginBottom: '0.5rem' }}><a href="/how-to-remove-water-from-phone-speaker" style={{ color: 'var(--accent)' }}>Comprehensive tutorial: Removing water from any smartphone</a></li>
-                    <li style={{ marginBottom: '0.5rem' }}><a href="/iphone-speaker-muffled-fix" style={{ color: 'var(--accent)' }}>iPhone Speaker Muffled? Try these 5 fixes first</a></li>
-                    <li style={{ marginBottom: '0.5rem' }}><a href="/android-speaker-not-working" style={{ color: 'var(--accent)' }}>Android speaker cleaning and troubleshooting guide</a></li>
+                    <li style={{ marginBottom: '0.5rem' }}><Link href="/how-to-remove-water-from-phone-speaker" style={{ color: 'var(--accent)' }}>Comprehensive tutorial: Removing water from any smartphone</Link></li>
+                    <li style={{ marginBottom: '0.5rem' }}><Link href="/iphone-speaker-muffled-fix" style={{ color: 'var(--accent)' }}>iPhone Speaker Muffled? Try these 5 fixes first</Link></li>
+                    <li style={{ marginBottom: '0.5rem' }}><Link href="/android-speaker-not-working" style={{ color: 'var(--accent)' }}>Android speaker cleaning and troubleshooting guide</Link></li>
                 </ul>
             </section>
         </>

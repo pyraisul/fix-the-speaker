@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,10 +35,10 @@ export default function RootLayout({
                 <footer className="footer">
                     <p>© 2024 SpeakerFix Pro. All rights reserved.</p>
                     <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', justifyContent: 'center', fontSize: '0.8rem' }}>
-                        <a href="/how-to-remove-water-from-phone-speaker">How it works</a>
-                        <a href="/iphone-speaker-muffled-fix">iPhone Fix</a>
-                        <a href="/android-speaker-not-working">Android Fix</a>
-                        <a href="/phone-speaker-crackling-fix">Crackling Fix</a>
+                        <Link href="/how-to-remove-water-from-phone-speaker">How it works</Link>
+                        <Link href="/iphone-speaker-muffled-fix">iPhone Fix</Link>
+                        <Link href="/android-speaker-not-working">Android Fix</Link>
+                        <Link href="/phone-speaker-crackling-fix">Crackling Fix</Link>
                     </div>
                 </footer>
             </body>

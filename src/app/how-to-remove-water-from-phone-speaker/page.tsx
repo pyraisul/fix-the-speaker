@@ -1,5 +1,6 @@
 import SEOPage from "@/components/SEOPage";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "How to Remove Water from Phone Speaker | Ultimate Guide 2024",
@@ -51,7 +52,7 @@ export default function WaterRemovalGuide() {
                     <ol>
                         <li>Turn your phone volume to 100%.</li>
                         <li>Place the phone on a flat surface with the speaker grill facing down.</li>
-                        <li>Visit the <a href="/">SpeakerFix Pro homepage</a> and select &apos;Water Eject&apos; mode.</li>
+                        <li>Visit the <Link href="/">SpeakerFix Pro homepage</Link> and select &apos;Water Eject&apos; mode.</li>
                         <li>Run the sound for at least 60 seconds. You may see small droplets appearing on the surface.</li>
                     </ol>
 
